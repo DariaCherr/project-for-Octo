@@ -1,0 +1,34 @@
+.banner {
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 120px;
+    &__title {
+        text-align: center;
+        font-size: 3.9rem;
+        line-height: 68px;
+        color: var(--color3);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .banner {
+        padding: 80px 10px 100px;
+        line-height: 60px;
+        font-size: 3.4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .banner {
+        padding: 60px 0 80px;
+        line-height: 48px;
+        font-size: 2.9rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner {
+        padding: 60px 0 70px;
+    }
+}

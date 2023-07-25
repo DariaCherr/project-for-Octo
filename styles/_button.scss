@@ -1,0 +1,29 @@
+.button {
+    width: 160px;
+    height: 40px;
+    font-size: 0.9rem;
+    border: none;
+    color: var(--color3);
+    &:first-of-type {
+        margin-right: 16px;
+    }
+}
+
+.button--light-blue {
+    background-color: var(--color1);
+}
+
+.button--blue {
+    background-color: var(--color2);
+}
+
+.button--black {
+    background-color: var(--color5);
+    border: 1px solid var(--color1);
+}
+
+@media screen and (max-width: 992px) {
+    .button {
+        width: 140px;
+    }
+}

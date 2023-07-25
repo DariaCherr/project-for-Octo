@@ -1,0 +1,19 @@
+@mixin card-pseudo($bg-color, $content: "") {
+    content: $content;
+    background-color: $bg-color;
+    position: absolute;
+    min-width: 50px;
+    height: 36px;
+    padding: 0 15px 0 16px;
+    color: #fff;
+    top: 10px;
+    left: 0;
+    text-align: center;
+    line-height: 36px;
+}
+
+@media screen and (max-width: 992px) {
+    @mixin card-pseudo($bg-color, $content: "") {
+        font-size: 0.75rem;
+    }
+}

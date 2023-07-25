@@ -1,0 +1,31 @@
+:root {
+    --color1: #00B6DD;
+    --color2: #081580;
+    --color3: #FFFFFF;
+    --color4: #000000;
+    --color5: #010101;
+    --swiper-navigation-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans', 'sans-serif';
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    .invisible {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .invisible-xs {
+        display: none;
+    }
+}

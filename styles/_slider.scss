@@ -1,0 +1,142 @@
+.slider {
+    padding: 100px 20px 100px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1180px;
+    margin: 0 auto;
+    &__item {
+        padding: 30px;
+        border: 1px solid #D3D8E4;
+        position: relative;
+        max-width: 360px;
+        &--first::before {
+            @include card-pseudo(var(--color1), "Category | Marketing");
+        }
+        &--second::before {
+            @include card-pseudo(var(--color1), "Category");
+        }
+        &--third::before {
+            @include card-pseudo(var(--color2), "Category | Development");
+        }
+        &--fourth::before {
+            @include card-pseudo(var(--color2), "Category | Marketing");
+        }
+        &--fifth::before {
+            @include card-pseudo(var(--color1), "Category | Marketing");
+        }
+        &--sixth::before {
+            @include card-pseudo(var(--color2), "Category");
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__name {
+        margin: 20px auto 6px;
+        font-size: 0.9rem;
+        &--light-blue {
+            color: var(--color1);
+        }
+        &--blue {
+            color: var(--color2);
+        }
+    }
+    &__title {
+        font-size: 1.4rem;
+    }
+    &__text {
+        margin: 16px auto 30px;
+    }
+    &__btn {
+        width: 10px;
+        height: 10px;
+        color: var(--color1);
+        margin: 0px 16px;
+        padding: 0px 16px;
+        position: relative;
+        top: 0;
+    }
+}
+
+.swiper-navigation-wrapper {
+    height: 20px;
+    position: absolute;
+    bottom: 40px;
+    left: -10px;
+    color: var(--color1);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .slider {
+        padding: 80px 20px 80px;
+        max-width: 940px;
+        &__item {
+            max-width: 455px;
+        }
+        &__title {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .slider {
+        padding: 60px 20px 60px;
+        max-width: 740px;
+        &__item {
+            max-width: 345px;
+            padding: 28px;
+        }
+        &__name {
+            margin: 18px auto 6px;
+            font-size: 0.75rem;
+        }
+        &__title {
+            font-size: 1.13rem;
+        }
+        &__text {
+            font-size: 0.88rem;
+            margin: 12px auto 26px;
+        }
+    }
+    .swiper-navigation-wrapper {
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        padding: 50px 20px 50px;
+        max-width: 568px;
+        &__item {
+            max-width: 258px;
+            padding: 16px;
+        }
+        &__name {
+            margin: 12px auto 6px;
+            font-size: 0.75rem;
+        }
+        &__text {
+            font-size: 0.88rem;
+            margin: 10px auto 20px;
+        }
+    }
+    .swiper-navigation-wrapper {
+        bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider {
+        max-width: 300px;
+        &__item {
+            max-width: 290px;
+        }
+    }
+    .swiper-navigation-wrapper {
+        left: 70px;
+    }
+}

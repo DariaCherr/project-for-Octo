@@ -1,0 +1,102 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    &__left {
+        margin-right: 127px;
+    }
+    &__title {
+        color: var(--color1);
+        font-size: 3.9rem;
+        line-height: 68px;
+    }
+    &__text {
+        color: var(--color3);
+        margin: 22px auto 40px;
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+    &__right {
+        img {
+            max-width: 500px;
+        }
+    }
+    &__photo-change {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .content {
+        &__left {
+            margin-right: 30px;
+        }
+        &__title {
+            line-height: 60px;
+        }
+        &__text {
+            line-height: 28px;
+            font-size: 1.3rem;
+            margin: 20px auto 30px;
+        }
+        &__button {
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 86px;
+        &__left {
+            margin: 0 0 40px 0;
+            text-align: center;
+        }
+        &__text {
+            line-height: 26px;
+            font-size: 1.13rem;
+            margin: 14px auto 30px;
+        }
+        &__button {
+            width: 140px;
+        }
+        &__photo {
+            display: none;
+        }
+        &__photo-change {
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        margin: 0 63px;
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__button {
+            width: 290px;
+            &:first-of-type {
+                margin: 0 0 16px 0;
+            }
+        }
+        &__right {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .content {
+        margin: 0 15px;
+    }
+}
