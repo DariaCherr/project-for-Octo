@@ -5,7 +5,10 @@
     &__item {
         padding: 30px;
         border: 1px solid #D3D8E4;
+        display: flex;
+        flex-direction: column;
         position: relative;
+        justify-content: space-between;
         &--first::before {
             @include card-pseudo(var(--color1), "Category | Marketing");
         }
@@ -29,7 +32,7 @@
         width: 100%;
     }
     &__name {
-        margin: 20px auto 6px;
+        margin: 20px 0 6px;
         font-size: 0.9rem;
         &--light-blue {
             color: var(--color1);
@@ -67,7 +70,7 @@
             padding: 28px;
         }
         &__name {
-            margin: 18px auto 6px;
+            margin: 18px 0 6px;
             font-size: 0.75rem;
         }
         &__title {
@@ -87,7 +90,7 @@
             padding: 16px;
         }
         &__name {
-            margin: 12px auto 6px;
+            margin: 12px 0 6px;
             font-size: 0.75rem;
         }
         &__text {
