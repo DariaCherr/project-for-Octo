@@ -137,13 +137,13 @@
 
 @media screen and (max-width: 576px) {
     .slider {
-        max-width: 300px;
+        max-width: 576px;
         &__item {
-            max-width: 290px;
-            height: 420px;
+            max-width: 576px;
+            height: 100%;
         }
     }
     .swiper-navigation-wrapper {
-        left: 70px;
+        left: 210px;
     }
 }
