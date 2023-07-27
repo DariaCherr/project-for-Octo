@@ -144,6 +144,6 @@
         }
     }
     .swiper-navigation-wrapper {
-        left: 210px;
+        left: calc(100% - 65%);
     }
 }

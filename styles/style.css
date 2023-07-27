@@ -323,7 +323,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .content {
-    margin: 0 15px;
+    margin: 0;
     padding: 0;
   }
   .content__buttons {
@@ -342,6 +342,7 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    max-width: 556px;
     min-width: 290px;
   }
 }
@@ -552,7 +553,7 @@ body {
     height: 100%;
   }
   .swiper-navigation-wrapper {
-    left: 210px;
+    left: 35%;
   }
 }
 .wrapper {
